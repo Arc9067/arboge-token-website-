@@ -1,0 +1,144 @@
+/*
+This was Developed by https://twitter.com/Arc9067
+*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: personal;
+  src: url(../img/Font/Persona\ DEMO.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --clr-primary: #fee5ca;
+  --clr-sec: #b00e2f;
+  --white: #ffffff;
+  --open: "Open Sans", sans-serif;
+  --person: personal;
+  --border: 1px solid var(--clr-sec);
+  --spacing: 0.5rem;
+  --max-width: 1200px;
+  --linear: 0.3s all linear;
+  --ease: 0.3s all ease;
+}
+
+li {
+  list-style: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: var(--clr-primary);
+  line-height: 1.5;
+  font-family: var(--open);
+  font-size: 1.3em;
+}
+
+#header {
+  min-height: 100vh;
+  width: 100%;
+  background: url(../img/home-bg.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--clr-sec);
+  color: white;
+}
+#header #nav {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  position: fixed;
+  width: 100%;
+}
+#header #nav .nav-logo {
+  display: grid;
+  place-items: center;
+}
+#header #nav .nav-logo a h2 {
+  font-size: 1em;
+  text-transform: capitalize;
+  color: var(--white);
+  font-family: var(--person), var(--open);
+}
+#header #nav .nav-icons {
+  display: flex;
+  place-items: center;
+}
+#header #nav .nav-icons i:first-child {
+  border: none;
+}
+#header #nav .nav-icons i {
+  font-size: 1.5em;
+  background-color: #fee5ca;
+  color: var(--clr-sec);
+  height: 2.5rem;
+  width: 2.5rem;
+  display: grid;
+  place-items: center;
+  border-right: 3px solid rgba(176, 14, 46, 0.6352941176);
+  cursor: pointer;
+}
+#header #nav .nav-icons i:last-child {
+  margin-left: 1rem;
+}
+#header #nav .nav-ul {
+  height: 300px;
+  width: 90%;
+  background-color: var(--clr-sec);
+  position: absolute;
+  right: 0;
+  transition: 0.5s background-color, 0.5s transform, 0.5s border-radius ease-in;
+  transform: translateY(-2000%);
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+#header #nav .nav-ul .nav-ul-icons {
+  display: grid;
+  justify-items: end;
+  padding: 1rem;
+}
+#header #nav .nav-ul .nav-ul-icons i {
+  font-size: 2em;
+  justify-self: end;
+  color: var(--clr-primary);
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: var(--clr-sec);
+  text-align: center;
+  border-top: 1px solid #fee5ca;
+  border-right: 1px solid #fee5ca;
+  cursor: pointer;
+}
+#header #nav .nav-ul .nav-links {
+  padding: 2rem;
+}
+#header #nav .nav-ul .nav-links ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+#header #nav .nav-ul .nav-links ul li {
+  font-family: var(--open);
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+#header #nav .displayn {
+  transform: translateY(0%);
+}
+#header .header-content {
+  padding-top: 10rem;
+}/*# sourceMappingURL=style.css.map */
