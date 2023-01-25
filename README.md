@@ -18,17 +18,13 @@ This is a readme file for Arboge Official Coin
 
 #### mobile Preview
 
-![alt text](https://github.com/Arc9067/
-arboge-token-website-/blob/main/img/screenshot/1.png?raw=true)
+![alt text](https://github.com/Arc9067/arboge-token-website-/blob/main/img/screenshot/1.png?raw=true)
 
-![alt text](https://github.com/Arc9067/
-arboge-token-website-/blob/main/img/screenshot/2.png?raw=true)
+![alt text](https://github.com/Arc9067/arboge-token-website-/blob/main/img/screenshot/2.png?raw=true)
 
-![alt text](https://github.com/Arc9067/
-arboge-token-website-/blob/main/img/screenshot/3.png?raw=true)
+![alt text](https://github.com/Arc9067/arboge-token-website-/blob/main/img/screenshot/3.png?raw=true)
 
-![alt text](https://github.com/Arc9067/
-arboge-token-website-/blob/main/img/screenshot/4.png?raw=true)
+![alt text](https://github.com/Arc9067/arboge-token-website-/blob/main/img/screenshot/4.png?raw=true)
 
 ### Link to website Preview
 
