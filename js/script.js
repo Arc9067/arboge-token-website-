@@ -12,6 +12,7 @@ function getElement(element) {
 const navOpen = getElement(".open-nav");
 const navUl = getElement(".nav-ul");
 const closeNav = getElement(".close-nav");
+const loading = getElement(".loading")
 
 navOpen.addEventListener("click", () => {
   navUl.classList.add("displayn");
@@ -20,3 +21,8 @@ navOpen.addEventListener("click", () => {
 closeNav.addEventListener("click", () => {
   navUl.classList.remove("displayn");
 });
+
+
+window.addEventListener("load",()=>{
+  loading.style.display="none"
+})

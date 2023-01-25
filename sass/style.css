@@ -9,8 +9,8 @@ This was Developed by https://twitter.com/Arc9067
   font-style: normal;
 }
 :root {
-  --clr-primary: #fee5ca;
-  --clr-sec: #b00e2f;
+  --clr-primary: #000;
+  --clr-sec: #ba9c3c;
   --white: #ffffff;
   --open: "Open Sans", sans-serif;
   --person: personal;
@@ -47,10 +47,40 @@ body {
   font-size: 1.3em;
 }
 
+.loading {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #000;
+  position: fixed;
+  z-index: 10000;
+  display: grid;
+  place-items: center;
+}
+.loading .spin {
+  width: 6rem;
+  height: 6rem;
+  border: 5px solid var(--clr-sec);
+  border-radius: 50%;
+  border-top-color: var(--white);
+  -webkit-animation: spinner 1s linear infinite;
+          animation: spinner 1s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 #header {
   min-height: 100vh;
   width: 100%;
-  background: url(../img/home-bg.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/home-bg.jpg) no-repeat;
   background-position: center;
   background-size: cover;
   background-color: var(--clr-sec);
@@ -63,15 +93,15 @@ body {
   gap: 1rem;
   position: fixed;
   width: 100%;
+  background-color: var(--white);
 }
 #header #nav .nav-logo {
   display: grid;
-  place-items: center;
 }
 #header #nav .nav-logo a h2 {
   font-size: 1em;
   text-transform: capitalize;
-  color: var(--white);
+  color: var(--clr-sec);
   font-family: var(--person), var(--open);
 }
 #header #nav .nav-icons {
@@ -141,4 +171,94 @@ body {
 }
 #header .header-content {
   padding-top: 10rem;
+  padding: 10rem 1.5rem 1.5rem 1.5rem;
+}
+#header .header-content h2 {
+  text-transform: uppercase;
+  font-size: 2em;
+}
+#header .header-content button {
+  text-transform: capitalize;
+  background-color: var(--white);
+  color: var(--clr-sec);
+  font-weight: bold;
+}
+#header .header-content .col-12:last-child {
+  padding-top: 2rem;
+}
+#header .header-content .col-12:last-child img {
+  height: 20rem;
+}
+
+#tokenomics {
+  width: 100%;
+  background-color: #000;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+#tokenomics .container .row {
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+}
+#tokenomics .container .row .main-t {
+  background-color: var(--white);
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+}
+#tokenomics .container .row .main-t h2 {
+  font-family: var(--open);
+  font-weight: 700;
+  font-size: 2em;
+  color: var(--clr-sec);
+  text-transform: capitalize;
+}
+#tokenomics .container .row .main-t .des {
+  font-size: 1em;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: bold;
+}
+#tokenomics .container .row .main-t p {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.644);
+}
+
+#footer {
+  background-color: #ba9c3c;
+  padding-top: 2rem;
+}
+#footer .container .row {
+  margin: 0 auto;
+}
+#footer .container .row .col-12 {
+  text-align: center;
+  text-transform: capitalize;
+}
+#footer .container .row .col-12 img {
+  height: 3rem;
+}
+#footer .container .row .col-12 p {
+  color: #fff;
+}
+#footer .container .row .col-12 ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: 0 auto;
+  gap: 2rem;
+}
+#footer .container .row .col-12 ul i {
+  font-size: 2em;
+  color: #000;
+}
+#footer .copy {
+  background-color: var(--sec);
+  text-align: center;
+  margin-top: 2rem;
+  color: var(--primary-clr);
+  text-transform: capitalize;
 }/*# sourceMappingURL=style.css.map */
